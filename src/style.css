@@ -3,159 +3,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 *{margin:0; padding: 0;}
 body{
-  
    background-color:rgb(255, 255, 255);
 }
 
 header{
  width: 100%;
  overflow: hidden;
- background:#4f7388;
- margin-bottom: 20px;
+ background:#D98D30;
 }
 
 .wrapper{
- width: 90%;
- max-width: 1000px;
+ width: 95%; 
+ /* max-width: 1000px; */
  margin: auto;
  overflow: hidden;
-
 }
+
+
 header .logo {
- color: #f2f2f2;
- font-size: 30px;
- line-height: 30px;
  float: left;
- 
+}
+
+.containerLogo{
+   width: 80px;
+   margin-top: 5px;
 }
 
 .logo{
-   width: 200px;
-   
+   width: 100%;
 }
 
 
 header nav{
  float: right;
- line-height:140px; 
+ line-height:10px; 
+ padding: 25px 0px;
         
 }
 header nav a{
  display: inline-block;
  color: #fff;
  text-decoration: none;
- padding: 10px 20px;
+ padding: 10px 10px;
  line-height: normal;
- font-size: 30px;
+ font-size: 14px;
  font-weight: bolder;
+ text-align: center;
  -webkit-transition: all 500ms ease;
  -o-transition:all 500ms ease;
  transition: all 500ms ease;
  font-family:'Handlee', cursive; 
+ width: 100px;
 }
-   
+
 header nav a:hover{
- background:#f56f3a ;
+ background:#9C1524 ;
  border-radius: 50px;
+ width: 100px;
 }
 
-.page-nave{
- border: 1px solid black;
- display:inline;
- padding: 10px 20px 5px 20px;
- color:#8ac9ee;
- text-align:center;
- border-radius:20px;
- text-shadow:2px 2px 2px #C1D9D9;
- font-family:'Baloo Tammudu 2', 'cursive';
-
+.containerBanner{
+   width: 100%;
 }
 
-  
-h1 { 
- text-align: center;
- color:rgb(255, 255, 255);
- font-family:'Handlee', cursive;  
- font-size: 35px;
- padding: 20px 70px 0px 0px;
- margin-left:400px;
- display:flex; 
- margin-top: 20px;
-}
-
-
-.portada{
-   color: #f2f2f2;
-   width: 200px;   
-   float: left;
-   margin: 20px 0px 10px 10px;
-   display: flex;
-   border-radius: 10px;
+.imgBanner{
+   width: 100%;
 }
    
+.container1{
+ width: 100%;
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ min-height: 80vh;     
+}
+
+
 h2{
- display:block ;
- background-color:rgb(255, 255, 255);
- color:#384D59;
+ display:block ; color:#384D59;
  border-radius: 10px; 
- font-family:'Handlee', cursive;  
+ /* font-family:'Handlee', cursive;   */
  text-align: center;
  margin: 10px 0px;
+ font-size: 18px;
 }
 
 h3{
-   display:inline-flex;
-   background-color:rgb(255, 255, 255);
    color:#384D59;
-   border-radius: 10px; 
-   font-family:'Handlee', cursive;  
-   text-align:left;
-   margin: 0px 40px;
-   padding: 2px 5px;
-}
-
-   
-.container1{
- display:flex;
- flex-wrap: wrap;
- justify-content:space-evenly;
- align-items:flex-start;
- background-image: url(IMG/fondo2.png);
- 
- 
-      
+   /* font-family:'Handlee', cursive;   */
+   /* text-align:left; */
+   /* margin: 0px 40px; */
+   /* padding: 2px 5px; */
 }
 
 .button-comprar{
    transition-duration:0.4s;
-   display: inline-flex;
-   margin: 10 px 0px;
+   margin: 10px 0px;
    padding: 5px 10px;
-   background-color:#384D59;
-   color:rgb(255, 255, 255);
+   background-color:#D98D30;
+   color:black;
    border-radius: 5px; 
-   font-family:'Handlee', cursive;  
    left: 80px;
    font-size:large;  
-   text-decoration: none;
+   width: 100%;
+   border:1px solid wheat
         
 }
 
 .button-comprar:hover{
-   background-color: blue;
+   /* background-color: #9C1524; */
    border: cornsilk;
-   
-     
+   /* text-align: center;     */
 }
    
 .producto{
-  margin:50px;
-  padding: 2px 16px;
+  margin:20px;
+  text-align: center;
+  padding: 20px;
 }
 
+.containerInfo{
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 15px;
+   align-items: center;
+}
 .producto:hover{
    box-shadow: 0 8px 16px 0 black;
-   background-color:#A4BABF;
+   background-color:#C2C2C7   ;
+   border-radius: 20px;
 }
 
 .producto img{
@@ -165,10 +141,6 @@ h3{
 
   
 }  
-       
-
-
-    
       
 .formulario{
    background-color:ivory;
@@ -294,3 +266,11 @@ footer .redesSociales{
    padding: 10px 5px;
 } 
 
+@media (min-width: 668px) {
+   header nav a{
+    font-size: 18px;
+  }
+  .wrapper{
+     width: 85%;
+  }
+}

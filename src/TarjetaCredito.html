@@ -14,23 +14,20 @@
     <body>
       <header>
         <div class="wrapper">
-          <div class = "titulo">
-            <img src="IMG/Gidget Pets GIF - Gidget Pets SecretLifeOfPets - Discover & Share GIFs.gif" alt="portada" class="portada"> 
-            
-            <h1>Happy Pets Art <br> La tienda para tu mascota</h1>
-            
-          </div> 
-          <nav>
-            <a href="#">Inicio</a>
+          <div class = "containerLogo">
+            <img src="IMG/logoRegistrado.png" class="logo" >
+          </div>
+         <nav>
+           <a href="#">Inicio</a>
            <a href="#">Servicios</a>
            <a href="#">Contáctanos</a>
-          </nav>
+         </nav>
         </div>
-     </header>
+      </header>
       <div class="container1">
         <section class="formulario" id="formulario">
-         <form onsubmit= "return numeroDeTarjeta"; id = "validar">
-            <img class="logo"src="IMG/Logo.png" alt="LogoPetsArt" >
+         <form onsubmit= "numeroDeTarjeta"; id = "validar">
+
             <h2 class="datos">Ingresa tus datos</h2>
             <label for = "name" >   Nombre:  </label> <input type="text" id="usuario" required/>
             <label for = "Tel"  >   Telefono:</label> <input type="tel"  id="telefono" minlength="7" maxlength="10" required/>
