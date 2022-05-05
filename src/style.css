@@ -1,213 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-*{margin:0; padding: 0;}
-body{
-   background-color:rgb(255, 255, 255);
+
+* {
+   margin: 0;
+   padding: 0;
 }
 
-header{
- width: 100%;
- overflow: hidden;
- background:#D98D30;
+body {
+   background-color: rgb(255, 255, 255);
 }
 
-.wrapper{
- width: 95%; 
- /* max-width: 1000px; */
- margin: auto;
- overflow: hidden;
+header {
+   width: 100%;
+   overflow: hidden;
+   background: #D98D30;
+}
+
+.wrapper {
+   width: 95%;
+   /* max-width: 1000px; */
+   margin: auto;
+   overflow: hidden;
 }
 
 
 header .logo {
- float: left;
+   float: left;
 }
 
-.containerLogo{
+.containerLogo {
    width: 80px;
    margin-top: 5px;
 }
 
-.logo{
+.logo {
+   width: 100%;
+   margin:10px
+}
+
+
+header nav {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   float: right;
+   line-height: 10px;
+
+
+}
+
+header nav a {
+   display: inline-block;
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 10px;
+   line-height: normal;
+   font-size: 14px;
+   font-weight: bolder;
+   text-align: center;
+   -webkit-transition: all 500ms ease;
+   -o-transition: all 500ms ease;
+   transition: all 500ms ease;
+   font-family: 'Handlee', cursive;
+   width: 100px;
+}
+
+header nav a:hover {
+   background: #9C1524;
+   border-radius: 50px;
+   width: 100px;
+}
+
+.containerBanner {
    width: 100%;
 }
 
-
-header nav{
- float: right;
- line-height:10px; 
- padding: 25px 0px;
-        
-}
-header nav a{
- display: inline-block;
- color: #fff;
- text-decoration: none;
- padding: 10px 10px;
- line-height: normal;
- font-size: 14px;
- font-weight: bolder;
- text-align: center;
- -webkit-transition: all 500ms ease;
- -o-transition:all 500ms ease;
- transition: all 500ms ease;
- font-family:'Handlee', cursive; 
- width: 100px;
-}
-
-header nav a:hover{
- background:#9C1524 ;
- border-radius: 50px;
- width: 100px;
-}
-
-.containerBanner{
+.imgBanner {
    width: 100%;
 }
 
-.imgBanner{
+.container1 {
    width: 100%;
-}
-   
-.container1{
- width: 100%;
- display:flex;
- flex-wrap: wrap;
- justify-content: center;
- min-height: 80vh;     
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   min-height: 80vh;
 }
 
 
-h2{
- display:block ; color:#384D59;
- border-radius: 10px; 
- /* font-family:'Handlee', cursive;   */
- text-align: center;
- margin: 10px 0px;
- font-size: 18px;
+h2 {
+   display: block;
+   color: #000;
+   border-radius: 10px;
+   /* font-family:'Handlee', cursive;   */
+   text-align: center;
+   margin: 10px 0px;
+   font-size: 18px;
 }
 
-h3{
-   color:#384D59;
+h3 {
+   color: #000;
    /* font-family:'Handlee', cursive;   */
    /* text-align:left; */
    /* margin: 0px 40px; */
    /* padding: 2px 5px; */
 }
 
-.button-comprar{
-   transition-duration:0.4s;
+.button-comprar {
+   transition-duration: 0.4s;
    margin: 10px 0px;
    padding: 5px 10px;
-   background-color:#D98D30;
-   color:black;
-   border-radius: 5px; 
+   background-color: #D98D30;
+   color: black;
+   border-radius: 5px;
    left: 80px;
-   font-size:large;  
+   font-size: large;
    width: 100%;
-   border:1px solid wheat
-        
+   border: 1px solid wheat
 }
 
-.button-comprar:hover{
+.button-comprar:hover {
    /* background-color: #9C1524; */
    border: cornsilk;
    /* text-align: center;     */
 }
-   
-.producto{
-  margin:20px;
-  text-align: center;
-  padding: 20px;
+
+.producto {
+   margin: 20px;
+   text-align: center;
+   padding: 20px;
 }
 
-.containerInfo{
+.containerInfo {
    display: flex;
    justify-content: space-between;
    padding: 0px 15px;
    align-items: center;
 }
-.producto:hover{
+
+.producto:hover {
    box-shadow: 0 8px 16px 0 black;
-   background-color:#C2C2C7   ;
+   background-color: #C2C2C7;
    border-radius: 20px;
 }
 
-.producto img{
-  width: 300px;
-  border-radius: 20px;
-  text-decoration: none;
-
-  
-}  
-      
-.formulario{
-   background-color:ivory;
-   display: inline-block;
-   padding: 20px;
-   margin:38px 100px 50px 100px;
-   border-radius:20px;
-   text-align:left;
-   font-weight:bolder;
-   font-size:larger;
-   color:#446a80;
-   box-shadow: 2px 4px 15px 5px #000;
-   font-family:'Handlee', cursive;  
+.producto img {
+   width: 300px;
+   border-radius: 20px;
+   text-decoration: none;
 }
 
-form input{
-   display:block;    
-   color:#384D59;
-   border-radius: 10px;
-   font-family:'Handlee', cursive;
-   margin:5px 5px 5px 5px;
-   width: 180px;
-   font-size:larger;
-   text-align: center;
-} 
 
-.buttonValidar{
+/* Vista validacion de tarjeta */
+
+.containerForm {
    display: flex;
-   background-color:#384D59;
-   color:rgb(255, 255, 255);
-   border-radius: 10px; 
-   font-family:'Handlee', cursive;  
-   font-size: x-large;
-   width:100px;
-   margin-left: 50%;
-   transform: translateX(-50%);
-   
-        
+   flex-direction: column;
+   min-height: 80vh;
+   justify-content: space-evenly;
+   /* padding: 20px 60px;  */
 }
-       
-.card{
+
+.containerForm section {
+   align-self: center;
+}
+
+.formulario {
+   background-color: ivory;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   margin: 30px 20px;
+   border-radius: 20px;
+   text-align: left;
+   font-weight: bolder;
+   font-size: larger;
+   color: #000;
+   ;
+   box-shadow: 2px 4px 15px 5px #000;
+   font-family: 'Handlee', cursive;
+   /* max-width: 320px; */
+}
+
+.containerInput {
+   margin: 15px;
+}
+
+form input {
+   display: block;
+   color: #000;
+   border-radius: 10px;
+   font-family: 'Handlee', cursive;
+   width: 180px;
+   font-size: larger;
+   text-align: center;
+}
+
+.buttonValidar {
+   color: #000;
+   border-radius: 10px;
+   font-family: 'Handlee', cursive;
+   font-size: x-large;
+   width: 100px;
+}
+
+@media (min-width: 550px) {
+   header nav {
+      flex-direction: row;
+      font-size: 18px;
+         padding: 25px 0px;
+   }
+}
+   @media (min-width: 820px) {
+      header nav a {
+         flex-direction: row;
+         font-size: 18px;
+      }
+
+      .wrapper {
+         width: 85%;
+      }
+
+   .containerForm {
+      display: flex;
+      flex-direction: row;
+   }
+}
+
+/* Tarjeta */
+
+.containerCard {
+   display: none;
+}
+
+@media (min-width: 540px) {
+   .containerCard {
+      display: flex;
+   }
+}
+
+
+@media (min-width: 830px) {
+   .containerCard {
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+   }
+}
+
+.card {
    width: 500px;
    height: 300px;
-   border-top:1px  blue;
-   border-left: 1px blue;
    border-radius: 10px;
-   backdrop-filter:blur(7px);
+   backdrop-filter: blur(7px);
    box-shadow: 4px 4px 4px black;
    cursor: pointer;
-   font-family:'Handlee', cursive; 
-   margin:100px 100px 50px 100px;
-   background:url(IMG/fondo\ tarjeta\ masterCard.png);
+   font-family: 'Handlee', cursive;
+   /* margin:100px 100px 50px 100px; */
+   background: url(IMG/fondo\ tarjeta\ masterCard.png);
    background-size: cover;
 }
 
-.MasterCard{
+.MasterCard {
    width: 80px;
    height: 80px;
-   background:url(IMG/logo-mastercard-4096.png);
+   background: url(IMG/logo-mastercard-4096.png);
    filter: brightness(0.8);
    background-size: cover;
-   position:relative;
+   position: relative;
    top: 10px;
    left: 370px;
 }
 
-.chip{
+.chip {
    width: 50px;
    height: 50px;
    margin: 25px;
@@ -218,27 +286,26 @@ form input{
    left: 40 px;
 }
 
-.card-number{
-        
+.card-number {
    width: 100px;
    height: 100px;
    position: relative;
    top: 25px;
    left: 30px;
-   font-family:'Orbitron', sans-serif;
-   font-size:25px;
+   font-family: 'Orbitron', sans-serif;
+   font-size: 25px;
    letter-spacing: 5px;
-   color:#9f842a;
-   text-shadow:2px 2px 2px  rgb(20, 14, 0);
+   color: #9f842a;
+   text-shadow: 2px 2px 2px rgb(20, 14, 0);
 }
 
-.meta{
-   display:flex;
+.meta {
+   display: flex;
    width: 370 px;
    justify-content: space-between;
 }
 
-.name{ 
+.name {
    width: 100px;
    height: 1000px;
    position: relative;
@@ -247,30 +314,53 @@ form input{
    font-family: 'Orbitron', sans-serif;
    font-size: 23px;
    letter-spacing: 3px;
-   color:black;
-   text-shadow:2px 2px 2px blanchedalmond;
+   color: black;
+   text-shadow: 2px 2px 2px blanchedalmond;
 }
 
-footer{
-   width: 100%;
-   margin-top:2px;
 
-}
-footer .redesSociales{
-   background-color:rgb(21, 15, 44) ;
-   display:flex;
-   flex-direction: row;
-   justify-content:left;
+/* footer */
+
+footer {
+   display: flex;
    flex-wrap: wrap;
-  
-   padding: 10px 5px;
-} 
+   /* width: 100%; */
+   background-color: #D98D30;
+   /* margin-top:2px; */
+   justify-content: center;
+
+}
+
+.brandSlogan{
+   display: flex;
+   flex-direction: row;
+}
+
+footer p{
+   max-width: 300px;
+   padding: 20px;
+   text-align: center;
+   font-size: 18px;
+   font-family: 'Handlee', cursive;
+   color:white;
+   
+
+}
+
+.redesSociales {
+   display: flex;
+   flex-direction: row;
+   justify-self: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding:10px 10px;
+   max-width: 300px;
+}
+
+
 
 @media (min-width: 668px) {
-   header nav a{
-    font-size: 18px;
-  }
-  .wrapper{
-     width: 85%;
+  footer{
+   justify-content: space-around;
   }
 }
